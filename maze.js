@@ -42,6 +42,8 @@ function init (){
 			maze.addEventListener('mouseleave',function(event){
 				if(update.innerHTML == "You Win"){
 					update.innerHTML == "Want to Play Again?";
+				} else if (update.innerHTML == "You Lose") {
+					update.innerHTML == "Want to Play Again?";
 				} else {
 					youLose();
 				}
