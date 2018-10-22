@@ -11,7 +11,7 @@ function init (){
 
 	function youLose(){
 		update.innerHTML = "CHEATER; YOU LOSE";
-		for (let i = 0; i<=walls.length; i++){
+		for (let i = 0; i<walls.length; i++){
 			walls[i].style.background = 'red';
 		}
 
@@ -23,7 +23,7 @@ function init (){
 
 	// The following for loop adds an event listener to all walls.
 
-		for (let i = 0; i<=walls.length; i++){
+		for (let i = 0; i<walls.length; i++){
 			walls[i].addEventListener('mouseover', function(event){
 				update.innerHTML = "Red Walls; Start Over";
 				var x = document.getElementById('maze').querySelectorAll('.boundary');
@@ -54,7 +54,7 @@ function init (){
 
 		s.addEventListener('click', function(event){
 			update.innerHTML = "Move your mouse over the 'S' to begin.";
-			for(let m = 0; m <=walls.length; m++){
+			for(let m = 0; m <walls.length; m++){
 				walls[m].style.background = "";
 			}
 
@@ -85,5 +85,5 @@ function init (){
 
 
 
-window.onload=init();
+window.onload=init;
 
